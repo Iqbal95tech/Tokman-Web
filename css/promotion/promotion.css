@@ -1,0 +1,54 @@
+.promotion {
+  padding: 32px 24px;
+  background-color: #ed4f05;
+}
+
+.text-promotion {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.text-promotion h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 130px;
+  color: white;
+  text-shadow: 1px 1px 1px #585858;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.img-container div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-container img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px #433d37;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+.img-second img {
+  width: 300px;
+  height: auto;
+}

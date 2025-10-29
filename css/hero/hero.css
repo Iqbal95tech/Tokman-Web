@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 90%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  color: #ed4f05;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px;
+  margin: 0;
+  text-shadow: 1px 1px 1px #585858;
+}
+
+.hero-text p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 1px #585858;
+}
+
+.order-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ed4f05;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 1px #585858;
+}
+
+.order-button:hover {
+  background-color: white;
+  color: #ed4f05;
+}

@@ -1,0 +1,15 @@
+/* Pastikan semua elemen menggunakan box-sizing: border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Sembunyikan overflow horizontal */
+  width: 100%;
+  scroll-behavior: smooth;
+}

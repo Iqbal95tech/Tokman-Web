@@ -1,0 +1,61 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px 24px;
+  gap: auto;
+  position: fixed; /* Ubah dari sticky ke fixed */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek */
+}
+
+.logo h3 {
+  color: #ed4f05;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  text-shadow: 1px 1px 1px #c0c0c0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 8px;
+  padding: 0;
+  gap: 80px;
+}
+
+.nav-links li {
+  margin-left: 8px;
+}
+
+.nav-links a {
+  color: #ed4f05;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  text-shadow: 1px 1px 1px #c0c0c0;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ed4f05;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}

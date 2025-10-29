@@ -1,0 +1,55 @@
+.review {
+  padding: 32px 24px;
+  background-color: #ed4f05;
+}
+
+.text-review {
+  display: flex;
+  justify-content: center;
+}
+
+.text-review h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 130px;
+  color: white;
+  text-shadow: 1px 1px 1px #585858;
+}
+
+.kotak-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*Agarkotakbisaturunkebarisberikutnyajikatidakmuat*/
+  gap: 88px;
+  /*Jarakantarkotak*/
+  justify-content: center;
+  /*Pusatkankotak-kotak*/
+  padding: 20px;
+  /* transition: transform 0.3s ease; */
+}
+
+.kotak {
+  width: 300px;
+  /*Lebarkotak*/
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 10px 10px #433d37;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.kotak:hover {
+  transform: scale(1.05);
+}
+
+.kotak-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-review p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}

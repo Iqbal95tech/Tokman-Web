@@ -1,0 +1,171 @@
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.footer-logo img {
+  width: 300px;
+  height: 300px;
+}
+
+.footer-icon {
+  font-size: 40px;
+  color: #ed4f05;
+  margin-left: 9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon i {
+  margin-right: 4rem;
+  display: flex;
+  transition: color 0.3s ease;
+}
+
+.footer-icon li {
+  list-style: none;
+}
+
+.footer-icon i:hover {
+  color: #ffffff;
+}
+
+.footer-text {
+  color: #ed4f05;
+  margin-left: 4rem;
+}
+
+.text-list {
+  list-style: none;
+  display: flex;
+}
+
+.text-list li {
+  margin: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.text-list a {
+  text-decoration: none;
+  color: #ed4f05;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* .text-list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ed4f05;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+} */
+
+.text-list a:hover {
+  color: #ffffff;
+}
+
+.text-list a:hover::after {
+  width: 100%;
+}
+
+hr {
+  width: 85%;
+  margin-top: 2rem;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #ed4f05;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* .list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ed4f05;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+} */
+
+.list a:hover {
+  color: #ffffff;
+}
+
+/* .list a:hover::after {
+  width: 100%;
+} */
+
+/* Bottom Footer */
+.bottom-footer {
+  background-color: black;
+  color: #ed4f05;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Poppins", sans-serif;
+  margin-left: 7rem;
+}
+
+.bottom-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bottom-footer p {
+  color: #ed4f05;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bottom-footer p:hover {
+  text-decoration: underline;
+}
+
+/* .list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ed4f05;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+} */
+
+.list a:hover {
+  color: #ffffff;
+}
+
+/* .list a:hover::after {
+  width: 100%;
+} */
