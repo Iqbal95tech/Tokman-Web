@@ -1,43 +1,101 @@
 .about {
-  padding: 80px 24px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: clamp(4rem, 8vw, 6rem) 1.5rem;
   background-color: #ed4f05;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .about-img img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* jaga square jika gambar asli square */
+  object-fit: cover;
   border-radius: 24px;
-  box-shadow: 20px 20px #433d37;
-  border: 2px solid black;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  box-shadow: 12px 12px 0 #433d37; /* shadow lebih kecil & modern */
+  border: 3px solid #000;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.about-img img:hover {
-  transform: scale(1.05);
+.about-img img:hover,
+.about-img img:focus {
+  transform: scale(1.04);
+  box-shadow: 18px 18px 0 rgba(67, 61, 55, 0.8);
 }
 
 .about-text {
-  padding: 24px 32px;
-  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 1rem;
 }
 
-.about-text h1 {
+.about-text h2 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 130px;
-  margin: 0;
+  font-size: clamp(3.5rem, 12vw, 8rem); /* responsive besar tapi aman */
+  font-weight: 400;
+  line-height: 0.9;
+  margin: 0 0 1.5rem;
   color: white;
-  text-shadow: 1px 1px 1px #585858;
-  margin-left: 32%;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 .about-text p {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: clamp(1.1rem, 3.5vw, 1.35rem);
+  line-height: 1.7;
+  margin: 0 auto 1.5rem;
+  max-width: 65ch;
   color: white;
-  text-shadow: 1px 1px 1px #585858;
-  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet ke atas (≥ 768px) → side by side */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .about-img {
+    flex: 0 0 45%;
+    max-width: none;
+  }
+
+  .about-text {
+    flex: 0 0 55%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .about-text h2 {
+    margin: 0 0 2rem;
+  }
+}
+
+/* Desktop besar (≥ 1024px) */
+@media (min-width: 1024px) {
+  .about {
+    padding: 8rem 5%;
+  }
+
+  .about-text h2 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
 }

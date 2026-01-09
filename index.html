@@ -55,32 +55,49 @@
 
      <!-- HERO -->
     <section id="home" class="hero"  data-aos="fade-down" >
-      <img  src="img/hero.jpg" alt="Hero Image"  />
+     <img 
+    src="img/hero.jpg" 
+    alt="Toko Kopi Manusia - Ngopi santai sejak zaman edan" 
+    width="1920" 
+    height="1080" 
+    loading="lazy">
       <div class="hero-text" >
         <h1 >TOKOKOPIMANUSIA</h1>
         <p>berdiri sejak zaman edan</p>
-        <a href="#order" class="order-button">Order Now</a>
+        <a href="#order" class="order-button" aria-label="Pesan sekarang di Toko Kopi Manusia" title="Pesan sekarang">Order Now</a>
       </div>
     </section>
     <!-- END HERO -->
 
      <!-- ABOUT -->
-    <section id="about" class="about">
-      <div class="about-img"data-aos="flip-left">
-        <img src="img/about.jpg" alt="about us" loading="lazy" />
-      </div>
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="about-container">
+      <figure class="about-img" data-aos="fade-right">
+      <img 
+        src="img/about.jpg" 
+        alt="Interior hangat Toko Kopi Manusia dengan suasana ramah dan nyaman seperti di rumah" 
+        loading="lazy" 
+        width="800" 
+        height="600" 
+        decoding="async"
+      >
+    
+      <!-- Optional: tambah caption jika relevan -->
+      <!-- <figcaption>Suasana kedai kami yang selalu menyambut</figcaption> -->
+    </figure>
       <div class="about-text">
-        <h1 data-aos="fade-left">About</h1>
-        <p data-aos="fade-left">
-          Toko Kopi Manusia dipilih dengan tujuan untuk menciptakan tempat yang
-          ramah, hangat, dan memanusiakan setiap pengunjung yang datang. Mereka
-          ingin setiap orang yang datang ke kedai mereka merasa seperti di rumah
-          sendiri dan menjadi bagian dari keluarga besar Toko Kopi Manusia. Toko
-          Kopi Manusia tidak hanya menawarkan berbagai jenis kopi berkualitas,
-          tetapi juga menekankan pentingnya hubungan antar manusia. Filosofi ini
-          tercermin dalam setiap aspek bisnis mereka, mulai dari desain interior
-          yang hangat dan nyaman, hingga pelayanan yang ramah dan personal.
-        </p>
+        <h2 id="about-heading" data-aos="fade-left">Tentang Kami</h2>
+      <p data-aos="fade-left" data-aos-delay="200">
+        Toko Kopi Manusia dipilih dengan tujuan untuk menciptakan tempat yang ramah, hangat, 
+        dan memanusiakan setiap pengunjung yang datang. Kami ingin setiap orang yang berkunjung 
+        merasa seperti di rumah sendiri dan menjadi bagian dari keluarga besar Toko Kopi Manusia.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="300">
+        Lebih dari sekadar kopi berkualitas, kami menekankan pentingnya hubungan antar manusia. 
+        Filosofi ini tercermin dalam desain interior yang cozy, pelayanan personal, 
+        dan komunitas yang kami bangun setiap hari.
+      </p>
+      </div>
       </div>
     </section>
     <!-- END ABOUT  -->
@@ -225,8 +242,7 @@
     <script>
       AOS.init();
     </script>
-          <!-- JS -->
-       <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
 

@@ -1,58 +1,114 @@
 .hero {
   position: relative;
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9; /* kunci proporsi */
+  min-height: 70svh;
+  max-height: 90vh; /* batasi agar tidak terlalu tinggi di desktop */
   overflow: hidden;
 }
 
 .hero img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  display: block;
-  opacity: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-text {
   position: absolute;
-  top: 55%;
-  left: 50%;
-  bottom: 5%;
-  transform: translate(-50%, -50%);
-  color: #ed4f05;
+  inset: 0; /* shorthand untuk top/right/bottom/left = 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 1.5rem;
+  color: #ed4f05;
 }
 
+.hero-text h1,
+.hero-text p {
+  margin: 0.2em 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* shadow lebih kuat & modern */
+}
+
+/* Heading utama */
 .hero-text h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 120px;
-  margin: 0;
-  text-shadow: 1px 1px 1px #585858;
+  font-size: clamp(3.2rem, 12vw, 10rem); /* responsif magic! */
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-top: 8rem;
 }
 
+/* Tagline */
 .hero-text p {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
-  margin: 0;
+  font-size: clamp(1.6rem, 6vw, 3.5rem);
   color: white;
-  text-shadow: 1px 1px 1px #585858;
+  margin-top: 0.3em;
 }
 
+/* Tombol */
 .order-button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 1.8rem;
+  padding: 0.9em 2.2em;
   background-color: #ed4f05;
   color: white;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
   font-weight: 600;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
-  box-shadow: 1px 1px 1px #585858;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
   background-color: white;
   color: #ed4f05;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Smartphone kecil (≤ 480px) */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-text {
+    padding: 1rem;
+  }
+
+  .order-button {
+    padding: 0.8em 1.8em;
+  }
+}
+
+/* Tablet potrait (≤ 768px) */
+@media (max-width: 768px) {
+  .hero {
+    aspect-ratio: 3 / 4;
+  }
+
+  .hero-text h1 {
+    line-height: 0.85;
+  }
+}
+
+/* Desktop kecil & landscape tablet */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-text {
+    padding: 4rem;
+  }
 }
