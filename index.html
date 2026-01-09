@@ -27,21 +27,30 @@
   </head>
   <body>
     <!-- NAVBAR -->
-  
-    <nav>
-      <div class="logo"  data-aos="fade-right">
-        <h3>Tokokopimanusia</h3>
-      </div>
+    <nav aria-label="Main navigation">
+      <div class="nav-container">
+     <a href="index.html" class="logo" aria-label="Tokokopimanusia - Kembali ke Beranda">
+            <h1>Tokokopimanusia</h1> <!-- atau pakai <span> jika sudah ada h1 di atas -->
+            <!-- Alternatif: <img src="logo.svg" alt="Tokokopimanusia"> -->
+        </a>
 
-      <ul class="nav-links" id="nav-links" data-aos="fade-left">
+        <!-- Hamburger button (untuk mobile) -->
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Menu Links -->
+      <ul class="nav-links" id="nav-links" data-aos="fade-left" >
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#review">Review</a></li>
         <li><a href="#promotion">Promotion</a></li>
       </ul>
+      </div>
     </nav>
-
     <!-- END NAVBAR -->
 
      <!-- HERO -->
@@ -216,6 +225,8 @@
     <script>
       AOS.init();
     </script>
+          <!-- JS -->
+       <script src="app.js"></script>
   </body>
 </html>
 
